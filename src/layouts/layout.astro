@@ -29,6 +29,12 @@ import '@/styles/global.css';
 
         <link rel="icon" href={logo_icon} type="image/x-icon" />
         <title>{title}</title>
+
+        <script is:inline>
+            const saved = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            document.documentElement.classList.toggle('dark', saved ? saved === 'dark' : prefersDark);
+        </script>
     </head>
     <body class="bg-white dark:bg-gray-800 scroll-smooth dark:text-white">
         <main 

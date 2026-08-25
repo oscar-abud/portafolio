@@ -1,0 +1,33 @@
+---
+interface Props {
+    title: string;
+    contenido: string;
+    nameContent: string;
+    url?: string;
+}
+
+const { title, nameContent, contenido, url } = Astro.props;
+const dev_icon = "./public/developer.ico";
+
+import '@/styles/global.css';
+---
+
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- SEO -->
+        <meta name={nameContent} content={contenido} />
+        <meta property="og:title" content={title} />
+        <meta property="og:type" content="Verdulería Virtual" />
+        <meta property="og:url" content={url} />
+        <meta name="theme-color" content="#0d5a48" />
+
+        <link rel="icon" href={dev_icon} type="image/x-icon" />
+        <title>{title}</title>
+    </head>
+    <body>
+        <slot />
+    </body>
+</html>

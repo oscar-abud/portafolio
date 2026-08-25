@@ -8,7 +8,10 @@ interface Props {
 
 const { title, nameContent, contenido, url } = Astro.props;
 const dev_icon = "./public/developer.ico";
+const logo_icon = "./public/logo.ico";
 
+import Footer from '@/components/Footer.astro';
+import Header from '@/components/Header.astro';
 import '@/styles/global.css';
 ---
 
@@ -24,10 +27,20 @@ import '@/styles/global.css';
         <meta property="og:url" content={url} />
         <meta name="theme-color" content="#0d5a48" />
 
-        <link rel="icon" href={dev_icon} type="image/x-icon" />
+        <link rel="icon" href={logo_icon} type="image/x-icon" />
         <title>{title}</title>
     </head>
-    <body>
-        <slot />
+    <body class="bg-white dark:bg-gray-800 scroll-smooth dark:text-white">
+        <main 
+          class="min-h-[100dvh]
+          grid 
+          grid-rows-[auto_1fr_auto] 
+          mx-auto max-w-[1140px] 
+          font-sans"
+        >
+            <Header />
+            <slot />
+            <Footer />
+        </main>
     </body>
 </html>

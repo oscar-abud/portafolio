@@ -1,0 +1,20 @@
+---
+import ThemeToggle from '@/components/ThemeToggle.jsx';
+
+const logo_dev = '../../public/logo.png'
+---
+
+<header class="flex align-bottom justify-between mt-5 mb-5">
+    <div class="size-30">
+        <img class="shadow-black" src={logo_dev} alt="developer_icon">
+    </div>
+
+    <nav class="flex items-center gap-4">
+        <ul class="flex justify-end gap-2">
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+        <ThemeToggle client:load />
+    </nav>
+</header>

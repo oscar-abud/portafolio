@@ -7,7 +7,6 @@ interface Props {
 }
 
 const { title, nameContent, contenido, url } = Astro.props;
-const dev_icon = "./public/developer.ico";
 const logo_icon = "./public/logo.ico";
 
 import Footer from '@/components/Footer.astro';
@@ -36,12 +35,13 @@ import '@/styles/global.css';
             document.documentElement.classList.toggle('dark', saved ? saved === 'dark' : prefersDark);
         </script>
     </head>
-    <body class="bg-white dark:bg-gray-800 scroll-smooth dark:text-white">
+    <body class="bg-gray-100 dark:bg-gray-900 scroll-smooth dark:text-white font-semibold">
         <main 
           class="min-h-[100dvh]
           grid 
           grid-rows-[auto_1fr_auto] 
-          mx-auto max-w-[1440px] 
+          mx-auto max-w-[1240px]
+          px-5 
           font-sans"
         >
             <Header />

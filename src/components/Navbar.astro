@@ -2,14 +2,12 @@
 import ThemeToggle from "./ThemeToggle";
 ---
 
-<nav class="flex items-center gap-4">
-    <ul class="flex justify-end gap-5 cursor-pointer">
-        <li>Experiencia</li>
-        <li>Proyectos</li>
-        <li>Sobre mi</li>
-        <li>Contacto</li>
+<nav class="flex items-center border-0 rounded-2xl gap-3 z-50 backdrop-blur-md p-0.5 sm:px-5 sm:py-1">
+    <ul class="flex justify-end gap-x-2.5 cursor-pointer text-sm">
+        <a class="sm:text-sm" href="#experiencia">Experiencia</a>
+        <a class="sm:text-sm" href="#proyectos">Proyectos</a>
+        <a class="sm:text-sm" href="#sobre-mi">Sobre mi</a>
+        <a class="sm:text-sm" href="#contacto">Contacto</a>
     </ul>
-    <br>
-    <br>
     <ThemeToggle client:load />
 </nav>

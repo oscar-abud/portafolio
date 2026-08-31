@@ -42,10 +42,12 @@ import '@/styles/global.css';
           grid-rows-[auto_1fr_auto] 
           mx-auto max-w-[1240px]
           px-5 
-          font-sans"
+          font-mono"
         >
             <Header />
-            <slot />
+            <main class="px-4">
+                <slot />
+            </main>
             <Footer />
         </main>
     </body>

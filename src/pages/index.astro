@@ -1,7 +1,8 @@
 ---
+import About from "@/components/About.astro";
+import Contact from "@/components/Contact.astro";
+import Hero from "@/components/Hero.astro";
 import Layout from "@/layouts/layout.astro"
-
-const logo_dev = '../../public/logo.png'
 ---
 <Layout 
   title="Mi Portafolio"
@@ -9,7 +10,7 @@ const logo_dev = '../../public/logo.png'
   contenido="Explora mi portafolio, proyectos destacados en desarrollo web y mi experiencia trabajando con Astro, Vue, TypeScript entre otras tecnologías del mundo del TI."
   url="https://seasonharvest.cl/"
 >
-  <div class="size-30">
-    <img src={logo_dev} alt="developer_icon">
-  </div>
+  <Hero />
+  <About />
+  <Contact />
 </Layout>

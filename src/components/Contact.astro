@@ -1,3 +1,12 @@
+---
+import ContactForm from '@/components/ContactForm.jsx';
+---
+
 <section id="contacto" data-section="contacto" class="section undefined scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl">
-    <h1>Soy la vista contacto</h1>
+    <div class="mb-10">
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Quieres trabajar conmigo?</h2>
+        <h3 class="mt-2 text-lg text-gray-600 dark:text-gray-300">Contáctame y cuéntame tu proyecto</h3>
+    </div>
+
+    <ContactForm client:load />
 </section>

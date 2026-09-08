@@ -1,0 +1,111 @@
+---
+const astro_logo = '/public/astro.svg'
+const react_logo = '/public/react.svg'
+const nextjs_logo = '/public/nextjs.svg'
+const tailwind_logo = '/public/tailwind.svg'
+const postgresql_logo = '/public/postgresql.svg'
+---
+
+<section id="proyectos" class="section scroll-m-20 w-full mx-auto container lg:max-w-4xl md:max-w-2xl">
+    <div class="mb-8">
+        <h2 class="flex items-center text-3xl font-bold tracking-tight gap-x-3 text-black/80 dark:text-white ">
+            <svg class="size-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M15 12h.01"></path><path d="M12 12h.01"></path><path d="M9 12h.01"></path><path d="M6 19a2 2 0 0 1 -2 -2v-4l-1 -1l1 -1v-4a2 2 0 0 1 2 -2"></path><path d="M18 19a2 2 0 0 0 2 -2v-4l1 -1l-1 -1v-4a2 2 0 0 0 -2 -2"></path></svg>
+            Proyectos
+        </h2>
+        <div class="mt-3 h-px w-50 bg-gradient-to-r from-amber-300/70 to-transparent" aria-hidden="true"></div>
+    </div>
+    <div class="flex flex-col gap-y-16">
+        <!-- Proyecto sistema para crear y configurar ecommerce -->
+        <article class="flex flex-col space-x-0 space-y-6 group md:flex-row md:space-x-10 md:space-y-0"> 
+            <div class="w-full md:w-1/2"> 
+                <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 shadow-xl overflow-clip rounded-xl sm:rounded-xl lg:border lg:border-gray-800 h-full"> 
+                    <img alt="ecommerce-admin" class="object-cover object-top w-full h-56 md:h-full" loading="lazy" src="/projects/ecommerce-admin.jpg">
+                </div> 
+            </div> 
+            <div class="w-full md:w-1/2 flex flex-col justify-center"> 
+                <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100"> 
+                    Ecommerce Admin
+                </h3> 
+                <ul class="flex flex-row flex-wrap mt-3 gap-2">
+                    <li> 
+                        <span class="flex gap-x-2 rounded-full text-sm py-1 px-2 text-amber-50" style="background-color: #000000;"> 
+                            <img class="size-5" src={nextjs_logo} alt="nextjs">
+                            Nextjs
+                        </span> 
+                    </li>
+                    <li> 
+                        <span class="flex gap-x-2 rounded-full text-sm py-1 px-2 text-amber-50" style="background-color: #31abe4;"> 
+                            <img class="size-5" src={tailwind_logo} alt="tailwind">
+                            Tailwind
+                        </span> 
+                    </li> 
+                    <li> 
+                        <span class="flex gap-x-2 rounded-full text-sm py-1 px-2 text-amber-50" style="background-color: #336791;"> 
+                            <img class="size-5" src={postgresql_logo} alt="Postgresql">
+                            Postgresql
+                        </span> 
+                    </li> 
+                </ul> 
+                <p class="mt-3 text-gray-700 dark:text-gray-400 text-pretty">
+                    Sistema web de tipo SaaS para crear y configurar ecommerce's con un solo stack con NextJs y PostgreSQL.
+                </p> 
+                <footer class="flex items-center mt-4 gap-x-4"> 
+                    <a target="_blank" href="https://github.com/oscar-abud/Ecommerce-admin" class="inline-flex bg-gray-100 text-gray-800 border-gray-300 items-center justify-center gap-2 px-3 py-2 space-x-2 text-base transition dark:text-white dark:bg-gray-800 border dark:border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black">  
+                        <svg class="size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="24" height="24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)" fill="currentColor"></path>
+                        </svg>
+                        Code
+                    </a>
+                </footer> 
+            </div> 
+        </article>
+
+        <!-- Proyecto season harvest -->
+        <article class="flex flex-col space-x-0 space-y-6 group md:flex-row md:space-x-10 md:space-y-0"> 
+            <div class="w-full md:w-1/2"> 
+                <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 shadow-xl overflow-clip rounded-xl sm:rounded-xl lg:border lg:border-gray-800 h-full"> 
+                    <img alt="season-harvest-client" class="object-cover object-top w-full h-56 md:h-full" loading="lazy" src="/projects/season-harvest-client.jpg">
+                </div> 
+            </div> 
+            <div class="w-full md:w-1/2 flex flex-col justify-center"> 
+                <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100"> 
+                    Season harvest
+                </h3> 
+                <ul class="flex flex-row flex-wrap mt-3 gap-2"> 
+                    <li> 
+                        <span class="flex gap-x-2 rounded-full text-sm py-1 px-2 text-amber-50" style="background-color: #ff5d01;"> 
+                            <img class="size-5" src={astro_logo} alt="astro">
+                            Astro 
+                        </span> 
+                    </li>
+                    <li> 
+                        <span class="flex gap-x-2 rounded-full text-sm py-1 px-2 text-amber-50" style="background-color: #2f95fd;"> 
+                            <img class="size-5" src={react_logo} alt="reactjsx">
+                            React
+                        </span> 
+                    </li> 
+                </ul> 
+                <p class="mt-3 text-gray-700 dark:text-gray-400 text-pretty">
+                    Web para ver productos, pasando de ser una landing estatica a uno dinámico con ssr y csr gracias a su arquitectura en islas, configurable desde un sistema aparte con React.
+                </p> 
+                <footer class="flex items-center mt-4 gap-x-4"> 
+                    <a target="_blank" href="https://github.com/oscar-abud/season-harvest-client" class="inline-flex bg-gray-100 text-gray-800 border-gray-300 items-center justify-center gap-2 px-3 py-2 space-x-2 text-base transition dark:text-white dark:bg-gray-800 border dark:border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black">  
+                        <svg class="size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="24" height="24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)" fill="currentColor"></path>
+                        </svg>
+                        Code
+                    </a> 
+                    <a target="_blank" href="https://season-harvest.vercel.app/" class="inline-flex bg-gray-100 text-gray-800 border-gray-300 items-center justify-center gap-2 px-3 py-2 space-x-2 text-base transition dark:text-white dark:bg-gray-800 border dark:border-gray-600 focus-visible:ring-yellow-500/80 text-md hover:bg-gray-800 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black">
+                        <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path>
+                            <path d="M11 13l9 -9"></path>
+                            <path d="M15 4h5v5"></path>
+                        </svg>
+                        Preview
+                    </a> 
+                </footer> 
+            </div> 
+        </article>
+    </div>
+</section>
